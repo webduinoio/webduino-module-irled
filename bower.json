@@ -1,0 +1,19 @@
+{
+  "name": "webduino-module-irled",
+  "description": "Infrared Transmitting Module for Webduino",
+  "main": "IRLed.js",
+  "authors": "",
+  "license": "MIT",
+  "keywords": [
+    "arduino",
+    "webduino",
+    "infrared"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

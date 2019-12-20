@@ -1,0 +1,17 @@
+<category id="catIRLed" tags="fly,mark1">
+  <block type="variables_set">
+    <field name="VAR">irled</field>
+    <value name="VALUE">
+      <block type="irled_new">
+        <field name="pin_">9</field>
+      </block>
+    </value>
+  </block>
+  <block type="irled_launch">
+    <value name="code_">
+      <block type="text">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+  </block>
+</category>

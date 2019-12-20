@@ -1,0 +1,15 @@
+{
+  "types": ["irled_new", "irled_launch"],
+  "category": "catMenu2",
+  "scripts": [
+    "blockly/blocks.js",
+    "blockly/javascript.js"
+  ],
+  "dependencies": [
+    "IRLed.js",
+    "IRLed-blockly.js"
+  ],
+  "msg": "blockly/msg",
+  "blocksMsg": "blockly/msg/blocks",
+  "toolbox": "blockly/toolbox.xml"
+}
