@@ -1,5 +1,5 @@
 {
-  "name": "webduino-module-irraw",
+  "name": "webduino-module-irled",
   "version": "1.0.0",
   "description": "Infrared Transmitting and Receiving Module for Webduino",
   "main": "IRLed.js",
