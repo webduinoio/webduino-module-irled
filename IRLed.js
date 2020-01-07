@@ -23,7 +23,6 @@
    * @extends webduino.Module
    */
   function IRLed(board, encode) {
-    console.log("debug");
     Module.call(this);
     this._board = board;
     this._encode = encode;
@@ -42,27 +41,6 @@
    * @method send 
    * @param {String} code Hexadecimal String to send.
    */
-  // proto.send = function (code) {
-    
-  //   var aryCode = [0x09, 0x04];
-  //   var ary;
-  //   code = code || this._encode;
-  //   if (code) {
-  //     ary = code.match(/\w{2}/g);
-      
-  //     // data length
-  //     aryCode.push(ary.length * 8);
-
-  //     ary.forEach(function (val) {
-  //       for (var i = 0, len = val.length; i < len; i++) {
-  //         aryCode.push(val.charCodeAt(i));
-  //       }
-  //     });
-  //     console.log(aryCode);
-  //     this._board.sendSysex(0x04, aryCode);
-  //   }
-  // };
-
   proto.send = function (code) {  
     var data = [0x09, 0x04, 32];
     code = code || this._encode;
@@ -72,7 +50,6 @@
         data.push(code.charCodeAt(i));
       }
     } 
-    console.log(data);     
     this._board.sendSysex(0x04, data);
   };
 
