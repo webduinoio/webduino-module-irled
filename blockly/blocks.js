@@ -1,6 +1,3 @@
-var mainUrl = 'https://tutorials.webduino.io/zh-tw/docs/';
-var utmUrl = '?utm_source=cloud-blockly&utm_medium=contextMenu&utm_campaign=tutorials';
-
 Blockly.Blocks['irled_new'] = {
   init: function () {
     this.appendDummyInput()
@@ -9,7 +6,7 @@ Blockly.Blocks['irled_new'] = {
     this.setOutput(true);
     this.setColour(230);
     this.setTooltip('');
-    this.setHelpUrl(mainUrl + 'basic/component/ir.html' + utmUrl); 
+    this.setHelpUrl('https://resource.webduino.io/docs/cloud-component/component-io/ir#irled');
   }
 };
 
@@ -23,6 +20,6 @@ Blockly.Blocks['irled_launch'] = {
     this.setNextStatement(true);
     this.setTooltip('');
     this.setColour(65);
-    this.setHelpUrl(mainUrl + 'basic/component/ir.html' + utmUrl); 
+    this.setHelpUrl('https://resource.webduino.io/docs/cloud-component/component-io/ir#irled');
   }
 };
